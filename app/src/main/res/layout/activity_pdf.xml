@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is demo of xml layout show in list which have to creae in PDF file. Click to below button for pdf creation"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_create_pdf"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Click to Create PDF File"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_share_pdf"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Share PDF file"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_pdf_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="PDF path : "
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PDF List Data"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+</LinearLayout>
+

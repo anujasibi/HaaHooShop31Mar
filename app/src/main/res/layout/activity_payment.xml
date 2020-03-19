@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="end"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="#fff"
+        android:backgroundTint="#008000"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:text="Skip For Now >>"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/lm"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:paddingTop="15dp"
+            android:background="#f2f2f2"
+            android:id="@+id/first"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:text="Payment for Shop (Online)"
+                android:textColor="#5C25B7"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textSize="12sp"
+                android:text="₹ 2000.00"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center_horizontal"
+                android:text="You have to pay an amount of Rs 2000 to continue using this app through Online"
+                />
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="#5c25b7"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:text="Book Now"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+
+            android:paddingTop="15dp"
+            android:background="#f2f2f2"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:text="Payment for Shop (COD)"
+                android:textColor="#5C25B7"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textSize="12sp"
+                android:text="₹ 2000.00"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center_horizontal"
+                android:text="You have to pay an amount of Rs 2000 to continue using this app by Cash"
+                />
+
+            <Button
+                android:id="@+id/cod"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="#5c25b7"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:text="Book Now"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/lm"
+            android:id="@+id/bn"
+           android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:text="For Further Clarification ,Please Contact Us @ "
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="7777777777"
+            android:id="@+id/num"
+            android:layout_below="@+id/bn"
+            android:textSize="12sp"/>
+        <View
+            android:layout_below="@id/num"
+            android:layout_width="70dp"
+            android:background="@color/blu"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dp">
+
+        </View>
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

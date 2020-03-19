@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:background="#5C25B7"
+    tools:context="com.haahoo.haahooshop.choose">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Your Shop Type"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:id="@+id/head"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"/>
+
+
+        <!-- <ImageView
+             android:layout_width="10dp"
+            android:layout_toEndOf="@+id/card1"
+             android:layout_below="@+id/head"
+             android:scaleType="centerCrop"
+             android:src="@drawable/close"
+             android:layout_height="40dp"/>
+ -->
+
+
+        <!--     <androidx.cardview.widget.CardView
+                 android:layout_width="80dp"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginBottom="10dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/card1"
+
+                 android:layout_below="@+id/head">
+
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginTop="5dp"
+                     android:layout_marginStart="2dp"
+                     android:layout_marginEnd="2dp"
+                     android:textAlignment="center"/>
+
+                 </RelativeLayout>
+
+             </androidx.cardview.widget.CardView>
+
+             <ImageView
+                 android:layout_width="10dp"
+                 android:layout_toEndOf="@+id/card2"
+                 android:layout_below="@+id/head"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/close"
+                 android:layout_height="40dp"/>
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="80dp"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:id="@+id/card2"
+                 android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"
+                 android:layout_marginTop="20dp"
+                 android:layout_below="@+id/head">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginTop="5dp"
+                     android:layout_marginStart="2dp"
+                     android:layout_marginEnd="2dp"
+                     android:textAlignment="center"/>
+
+             </androidx.cardview.widget.CardView>
+
+             <ImageView
+                 android:layout_width="10dp"
+
+                 android:layout_below="@+id/head"
+                 android:scaleType="centerCrop"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="5dp"
+                 android:layout_marginStart="5dp"
+                 android:src="@drawable/close"
+                 android:layout_height="40dp"/>
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="80dp"
+                 android:layout_height="40dp"
+                 android:layout_marginRight="20dp"
+                 android:id="@+id/card3"
+                 android:layout_marginBottom="10dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginTop="20dp"
+                 android:layout_below="@+id/head">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginTop="5dp"
+                     android:layout_marginStart="2dp"
+                     android:layout_marginEnd="2dp"
+                     android:textAlignment="center"/>
+
+             </androidx.cardview.widget.CardView>-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_below="@+id/recycler"
+            android:layout_alignParentBottom="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/list"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list"
+                    android:id="@+id/imj"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/right"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

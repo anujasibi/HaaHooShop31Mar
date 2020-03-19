@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="5dp"
+        android:id="@+id/card"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+               android:layout_centerVertical="true"
+                android:src="@drawable/person"
+                app:civ_border_width="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="Product Name"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:textAlignment="center"
+                android:textColor="#CC0033"
+                android:textStyle="bold"
+
+               />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_toEndOf="@+id/profile_image"
+                android:paddingLeft="10dp"
+                android:text="Location"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pay"
+                android:paddingLeft="10dp"
+               android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:text="Status :"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                />
+            <TextView
+                android:id="@+id/statuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pay"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/status"
+                android:text="Status "
+                android:visibility="gone"
+              android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="#000"
+                />
+
+
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:paddingLeft="10dp"
+                android:text="Payment: "
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/paye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/pay"
+                android:text="Status "
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="#000"
+                />
+
+
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/example"
+                android:layout_width="match_parent"
+                app:outer_color="#008000"
+
+                android:layout_below="@+id/pay"
+                android:layout_toEndOf="@+id/profile_image"
+                android:layout_marginTop="20dp"
+                app:slider_height="30dp"
+                app:area_margin="4dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content"
+                app:text_size="12sp"
+                app:text_style="bold"
+
+                app:text="Accept" />
+
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/examplen"
+                android:layout_width="match_parent"
+                app:outer_color="#f00000"
+                app:area_margin="4dp"
+                android:layout_below="@+id/example"
+                android:layout_marginTop="20dp"
+                app:slider_height="30dp"
+
+                android:layout_toEndOf="@+id/profile_image"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                app:text_style="bold"
+               app:text_size="12sp"
+                app:text="Reject" />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/category"
+        android:textColor="#3d3d3d"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:layout_height="30dp">
+
+    </TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/category"
+        android:background="#666666" />
+
+</RelativeLayout>

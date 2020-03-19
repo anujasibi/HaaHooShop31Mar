@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/re"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Branch Management"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="#5C25B7"
+            android:id="@+id/tex"
+            />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="28dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp" />
+
+
+
+    </RelativeLayout>
+
+   <!-- <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Choose your function by clicking the button at bottom"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/tr"
+        android:layout_below="@+id/re"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />-->
+
+
+
+
+  <!--  <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textColor="#000"
+        android:textSize="100dp"
+        android:layout_below="@+id/one"/>-->
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/dot"
+        android:id="@+id/dot1"
+        android:layout_below="@+id/re"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/dot1"
+       android:text="Add Branches"
+        android:id="@+id/addb"
+        android:layout_below="@+id/re"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/dot"
+        android:id="@+id/dot2"
+        android:layout_below="@+id/dot1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/dot2"
+        android:text="Add Employee"
+        android:id="@+id/adde"
+        android:layout_below="@+id/dot1"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/dot"
+        android:id="@+id/dot3"
+        android:layout_below="@+id/dot2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/dot3"
+        android:text="View Branches"
+        android:id="@+id/viewb"
+        android:layout_below="@+id/dot2"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/dot"
+        android:id="@+id/dot4"
+        android:layout_below="@+id/dot3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/dot4"
+        android:text="View Employees"
+        android:id="@+id/viewe"
+        android:layout_below="@+id/dot3"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/dot"
+        android:id="@+id/dot5"
+        android:layout_below="@+id/dot4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dot4"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/dot5"
+        android:id="@+id/viewbp"
+        android:text="View Branch Products"
+        android:textColor="#000" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F500"
+        android:layout_height="wrap_content"
+        android:textColor="#5C25B7"
+        android:textStyle="bold"
+        android:text="Show/Hide"
+        android:onClick="showClose"
+        android:id="@+id/button"/>
+
+    <com.naylalabs.semiradialmenu.RadialMenuView
+        android:id="@+id/radial_menu_view"
+        android:layout_width="match_parent"
+        android:layout_above="@id/button"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>

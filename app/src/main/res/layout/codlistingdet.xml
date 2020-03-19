@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/person"
+            app:civ_border_width="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:civ_border_color="#FF000000"/>
+
+
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Order ID"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:textAlignment="center"
+                android:textColor="#000"
+
+
+                />
+
+
+            <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_below="@+id/orderid"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="Product Name"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:textAlignment="center"
+            android:textColor="#000"
+
+
+            />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="Product Price"
+                android:layout_below="@+id/title"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:textAlignment="center"
+                android:textColor="#000"
+
+
+                />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="Delivery Type"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/profile_image"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_below="@+id/price"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

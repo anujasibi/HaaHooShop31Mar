@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/adamina</item>
+        <item>@font/alegreya_sc_black</item>
+        <item>@font/amethysta</item>
+        <item>@font/andada</item>
+        <item>@font/arbutus</item>
+        <item>@font/cormorant_garamond_medium</item>
+        <item>@font/cormorant_unicase_bold</item>
+        <item>@font/cormorant_unicase_light</item>
+        <item>@font/graduate</item>
+        <item>@font/pt_serif_caption</item>
+    </array>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Spec 1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/black"
+        android:id="@+id/spec1"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+</RelativeLayout>
+
+
+    <!-- <EditText
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toEndOf="@+id/spec1"
+         android:id="@+id/value"
+         android:layout_marginStart="10dp"
+         android:hint="Enter Your Specification in Units"
+         android:layout_toRightOf="@+id/spec1"
+         android:layout_marginLeft="10dp" />-->
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Previous value"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/black"
+        android:id="@+id/prval"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+
+
+        <Spinner
+            android:layout_width="170dp"
+            android:id="@+id/spinner"
+            android:visibility="gone"
+            android:layout_height="50dp">
+
+        </Spinner>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height   ="30dp"
+        android:layout_toEndOf="@+id/ln"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:text="Apply"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:background="#CC0033"
+        android:gravity="center"
+        android:id="@+id/apply"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height   ="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:text="Edit"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:background="#CC0033"
+        android:gravity="center"
+        android:id="@+id/editnew"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+    <!--  <Spinner
+          android:layout_width="match_parent"
+          android:id="@+id/spinner"
+          android:visibility="gone"
+          android:layout_marginBottom="10dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_toRightOf="@id/spec1"
+          android:layout_height="40dp">
+
+
+      </Spinner>-->
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height   ="wrap_content"
+         android:layout_below="@+id/spec1"
+         android:text="Click here to apply this specification"
+         android:textStyle="bold"
+         android:id="@+id/apply"
+         android:textAlignment="center"
+         android:textColor="#5C25B7"
+         android:layout_marginBottom="20dp"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Applied"
+        android:id="@+id/remove"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="#5C25B7"
+        android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"/>
+
+
+
+
+</RelativeLayout>

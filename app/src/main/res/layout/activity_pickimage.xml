@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haahoo.haahooshop.pickimage">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/re"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Choose Product Image"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="#5c25b7"
+            />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp" />
+
+
+
+    </RelativeLayout>
+
+    <!-- create a ImageView and Gallery -->
+    <GridView
+        android:id="@+id/imageGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="100dp"
+        android:numColumns="3"
+         >
+    </GridView>
+
+
+</LinearLayout>

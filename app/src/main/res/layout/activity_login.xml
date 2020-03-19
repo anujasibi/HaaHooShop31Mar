@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.haahoo.haahooshop.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/base"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/logo"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tr"
+            android:text="Join Us"
+            android:textStyle="bold"
+            android:layout_below="@+id/base"
+            android:textSize="25dp"
+            android:textColor="#5C25B7"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/tr"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/base2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lo"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0sp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_gravity="start"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:text="SignIn / SignUp"-->
+                        <!--android:textAlignment="viewStart"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:textStyle="normal" />-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColorHint="#5C25B7"
+                            android:hint="Enter Mobile Number"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/nn"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/uname"
+                                android:maxLength="10"
+                                android:backgroundTint="@color/blu"
+                                android:inputType="number"
+                                android:textColor="#000"
+                                android:textAlignment="center"
+                                android:layout_height="50dp">
+
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pwdlayout"
+                            android:textColorHint="#5C25B7"
+                            android:layout_marginLeft="10dp"
+                          android:layout_below="@+id/nn"
+
+                            android:layout_marginRight="10dp"
+                            app:passwordToggleEnabled="true"
+                            android:hint="Enter password"
+                            android:layout_marginBottom="10dp"
+                            >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:inputType="textPassword"
+                                android:id="@+id/pwd"
+                                android:backgroundTint="@color/blu"
+                                android:layout_marginBottom="15dp"
+                                android:textAlignment="center"
+                                android:layout_height="50dp">
+
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                        <TextView
+                            android:id="@+id/forgot"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_below="@+id/pwdlayout"
+                            android:text="Forgot Password?"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000"
+                            android:visibility="gone" />
+
+
+
+                        <TextView
+                            android:id="@+id/login"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="50dp"
+                            android:background="#5c25b7"
+                            android:gravity="center_vertical"
+                            android:text="Login"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/continuetologin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_alignParentBottom="true"
+            android:background="#5c25b7"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="Continue"
+
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

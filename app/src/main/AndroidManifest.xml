@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.haahoo.haahooshop">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/rounded"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/rounded"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".RealtimeLocation"></activity>
+        <activity android:name=".codlisting" />
+        <activity android:name=".DeliveryOptions" />
+        <activity android:name=".viewbankaccounts" />
+        <activity android:name=".Executive" />
+        <activity android:name=".ordman" />
+        <activity android:name=".NoProduct" />
+        <activity
+            android:name=".NoOrder"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".FetchLocationNew"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".Test" />
+        <activity
+            android:name=".FetchLocation"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".CurrentLocation" />
+        <activity android:name=".ProdMan" />
+        <activity android:name=".editmaincatee" />
+        <activity android:name=".AddBankDetail" />
+        <activity android:name=".chooseeditcatt" />
+        <activity android:name=".EditDelivery" />
+        <activity android:name=".viewdeliveryplan" />
+        <activity android:name=".DeliveryPlans" />
+        <activity android:name=".ProductSearch" />
+        <activity android:name=".manreg" />
+        <activity android:name=".distributorreg" />
+        <activity android:name=".chooseeditcat" />
+        <activity android:name=".editmaincate" />
+        <activity android:name=".CODOTP" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCMlmUsXwT7GvG8ka3JQiRbebobCSELsYU" />
+
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".splashscreen" />
+        <activity android:name=".Pdf" />
+        <activity android:name=".Confirmresetpin" />
+        <activity android:name=".ResetPin" />
+        <activity android:name=".verifyotppin" />
+        <activity android:name=".Resetpinphone" />
+        <activity android:name=".qrcode" />
+        <activity android:name=".paymentnew" />
+        <activity android:name=".viewvariant" />
+        <activity android:name=".ConfirmPin" />
+        <activity android:name=".PinRegister" />
+        <activity android:name=".Pincode" />
+        <activity android:name=".OrderManagement" />
+        <activity android:name=".BranchManagement" />
+        <activity android:name=".DemoActivity" />
+        <activity android:name=".addoffer" />
+        <activity android:name=".review" />
+        <activity android:name=".cloudproductdetails" />
+        <activity android:name=".cloudproductviewdetails" />
+        <activity android:name=".cloudproductview" />
+        <activity android:name=".cloudproductcategory" />
+        <activity android:name=".Productmanager" />
+        <activity android:name=".pickimage" />
+        <activity android:name=".Addvar" />
+        <activity android:name=".AddVariant" />
+        <activity android:name=".choosepdtcategory" />
+        <activity android:name=".Dynamictext" />
+        <activity android:name=".addempnew" />
+        <activity android:name=".productvariant" />
+        <activity android:name=".chooseimages" />
+        <activity android:name=".ChooseAddress" />
+        <activity android:name=".AddBankDetails" />
+        <activity android:name=".Earnings" />
+        <activity android:name=".Navigation" />
+        <activity android:name=".activation" />
+        <activity android:name=".shpcategory" />
+        <activity android:name=".choose" />
+        <activity android:name=".stepper" />
+        <activity android:name=".Login" />
+        <activity android:name=".registernew" />
+        <activity android:name=".Tab5Fragment" />
+        <activity android:name=".Tab4Fragment" />
+        <activity android:name=".viewallproduct" />
+        <activity android:name=".Tab3Fragment" />
+        <activity android:name=".Tab2Fragment" />
+        <activity android:name=".Tab1Fragment" />
+        <activity android:name=".Uporder" />
+        <activity android:name=".productnew" />
+        <activity android:name=".cancelsub" />
+        <activity android:name=".neww" />
+        <activity android:name=".notification" />
+        <activity android:name=".Orderfrag" />
+        <activity android:name=".Subscriptionlist" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".forgototp" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".changepassword" />
+        <activity android:name=".addshopim" />
+        <activity android:name=".viewimages" />
+        <activity android:name=".viewpdtnew" />
+        <activity android:name=".subscriptionmode" />
+        <activity android:name=".subscription" />
+        <activity android:name=".orderhistory" />
+        <activity android:name=".orderdetails" />
+        <activity android:name=".customerdetails" />
+        <activity android:name=".viewbran" />
+        <activity android:name=".viewbranchproducts" />
+        <activity android:name=".UpcomingOrder" />
+        <activity android:name=".employeedetails" />
+        <activity android:name=".editbranchprofile" />
+        <activity android:name=".branchprofile" />
+        <activity android:name=".viewemployee" />
+        <activity android:name=".ViewBranches" />
+        <activity android:name=".AddEmployee" />
+        <activity android:name=".AddShopBranch" />
+        <!--
+<meta-data
+        android:name="com.razorpay.ApiKey"
+        android:value="rzp_live_MquWTYi6ypIVBE" />
+        -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_Sc2QOgXEJcedKm" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".addproductnew"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Payment" />
+        <activity android:name=".editcategory" />
+        <activity android:name=".edit_product" />
+        <activity android:name=".viewpdtdetails" />
+        <activity android:name=".editprofile" />
+        <activity android:name=".profile" />
+        <activity android:name=".VerifyOtp" />
+        <activity android:name=".viewproduct" />
+        <activity android:name=".finaladd" />
+        <activity android:name=".addimage" />
+        <activity android:name=".category" />
+        <activity android:name=".addprod" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AddProduct" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainUI" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+    </application>
+
+</manifest>

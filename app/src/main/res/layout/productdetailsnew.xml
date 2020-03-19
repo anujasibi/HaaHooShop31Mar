@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haahoo.haahooshop.profile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:id="@+id/re"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/io"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backj"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:id="@+id/imgg"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/editj"
+                    android:layout_marginTop="20dp"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:id="@+id/img"
+                    android:layout_height="200dp">
+
+                    <androidx.viewpager.widget.PagerTitleStrip
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom" />
+
+                </androidx.viewpager.widget.ViewPager>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:text="Product Name"
+                    android:id="@+id/sname"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#fff"
+                    android:layout_below="@id/img"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/re"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/money"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Price :"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:id="@+id/locat"
+                    android:textColor="#000"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Price"
+                    android:textAlignment="viewStart"
+                    android:gravity="center_vertical"
+                    android:id="@+id/location"
+                    android:layout_toEndOf="@+id/locat"
+                    android:textColor="#000"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/locat" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/location"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/moneydis"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Discount :"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/location"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/owne"
+                    android:textColor="#000"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Discount"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/location"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/owner"
+                    android:layout_toEndOf="@+id/owne"
+                    android:textColor="#000"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/owne" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/owner"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/stock"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Stock :"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/owner"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/gstn"
+                    android:textColor="#000"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Stock"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/owner"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/gstno"
+                    android:layout_toEndOf="@+id/gstn"
+                    android:textColor="#000"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/gstn" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/gstno"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/descri"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Description :"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/gstno"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/categor"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Description"
+                    android:layout_toEndOf="@+id/categor"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/gstno"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/category"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/categor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="    Edit Product Details"
+                    android:layout_marginRight="50dp"
+                    android:layout_below="@+id/category"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/edit"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/editp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

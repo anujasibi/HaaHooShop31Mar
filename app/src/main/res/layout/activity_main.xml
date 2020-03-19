@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.haahoo.haahooshop.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/adamina"
+            android:text="HaaHoo Business"
+            android:textAlignment="center"
+            android:textColor="#5C25B7"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tr"
+            android:id="@+id/base"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/logo"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/base"
+            android:layout_marginTop="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/base2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_gravity="start"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:text="SignIn / SignUp"-->
+                        <!--android:textAlignment="viewStart"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:textStyle="normal" />-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/uname"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="Enter Mobile Number"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textAlignment="center"
+                                android:textColor="#000">
+
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_cyclic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0"
+                            android:indeterminate="true"
+                            android:indeterminateTint="#000"
+                            android:indeterminateTintMode="src_atop"
+                            android:visibility="gone" />
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/pwdlayout"
+                            android:layout_marginLeft="10dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            app:passwordToggleEnabled="true"
+                            android:layout_marginBottom="10dp"
+                            >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:inputType="textPassword"
+                                android:id="@+id/pwd"
+                                android:visibility="gone"
+                                android:layout_marginBottom="5dp"
+                                android:hint="Enter password"
+                                android:textAlignment="center"
+                                android:layout_height="50dp">
+
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                        <TextView
+                            android:id="@+id/forgot"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:text="Forgot Password?"
+                            android:fontFamily="@font/abril_fatface"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/continuetologin"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="#5c25b7"
+                            android:clickable="true"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center_vertical"
+                            android:text="Continue"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/login"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="50dp"
+                            android:background="#5c25b7"
+                            android:gravity="center_vertical"
+                            android:text="Login"
+                            android:fontFamily="@font/abril_fatface"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

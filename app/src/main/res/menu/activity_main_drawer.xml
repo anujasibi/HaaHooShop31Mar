@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Orders" />
+
+        <item
+            android:id="@+id/subsc"
+            android:icon="@drawable/sublisv"
+            android:title="Subscriptions" />
+
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="Add Bank Details" />
+
+        <item
+            android:id="@+id/nav_del"
+            android:icon="@drawable/deliveryadd"
+            android:title="Add Delivery Plans" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_credit_card_black_24dp"
+            android:title="Withdraw Earnings" />
+
+
+        <item
+            android:id="@+id/update"
+            android:icon="@drawable/location"
+            android:title="Update Location" />
+
+        <item
+            android:id="@+id/change"
+            android:icon="@drawable/change"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/pay"
+            android:icon="@drawable/cat"
+            android:title="Payment" />
+
+        <item
+            android:id="@+id/qrr"
+            android:icon="@drawable/qr"
+            android:title="Shop QR" />
+
+
+
+        <item
+            android:id="@+id/cod"
+            android:icon="@drawable/ccod"
+            android:title="COD List" />
+
+        <item
+            android:id="@+id/editc"
+            android:icon="@drawable/cat"
+            android:title="Edit Your Category" />
+
+
+
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderManagement">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/re"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Order Management"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="#5C25B7"
+            android:id="@+id/tex"
+            />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="28dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re"
+        android:layout_marginTop="20dp"
+        android:id="@+id/re1">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/box"
+            app:civ_circle_background_color="@color/blu"
+            app:civ_border_width="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:civ_border_color="#5c25b7"/>
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img1"
+            android:text="Upcoming Orders"
+            android:textSize="12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:textColor="#5c25b7"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img2"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/history"
+            app:civ_circle_background_color="@color/blu"
+            app:civ_border_width="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:civ_border_color="#5c25b7"/>
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img2"
+            android:text="Order History"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#5c25b7"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/re2">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img3"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/press"
+            app:civ_circle_background_color="@color/blu"
+            app:civ_border_width="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:civ_border_color="#5c25b7"/>
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img3"
+            android:text="Subscription List"
+            android:textSize="12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:textColor="#5c25b7"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img4"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mmmm"
+            app:civ_circle_background_color="@color/blu"
+            app:civ_border_width="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:civ_border_color="#5c25b7"/>
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img4"
+            android:text="Cancel Subscription"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:textColor="#5c25b7"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

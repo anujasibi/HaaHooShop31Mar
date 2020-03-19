@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">HaaHoo Business</string>
+
+    <string-array name="stepLabels">
+        <item>Approval</item>
+        <item>Processed</item>
+        <item>Shipped</item>
+        <item>Delivery</item>
+    </string-array>
+
+    <string name="openDrawer">open</string>
+    <string name="closeDrawer">close</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_4_title">Hello Customers!</string>
+    <string name="slide_4_desc">The Easiest Way to Connect Better with Customers!</string>
+
+    <string name="slide_1_title">Hire Sales</string>
+    <string name="slide_1_desc">Keep Your Sales Pipeline Full By Prospecting Continuously. Always Have More People To See Than You Have Time To See Them.!</string>
+
+    <string name="slide_3_title">Boost Productivity</string>
+    <string name="slide_3_desc">It\'s not knowing what to do, it\'s doing what you know.</string>
+
+    <string name="slide_2_title">Earn More</string>
+    <string name="slide_2_desc">Your greatest asset is your earning ability. Your greatest resource is your time.Make more profits through our service
+</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+</resources>

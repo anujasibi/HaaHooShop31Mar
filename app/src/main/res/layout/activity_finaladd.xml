@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haahoo.haahooshop.AddProduct">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Add Product"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="#fff"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="#5c25b7"
+                        />
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="28dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_arrow_back_black_24dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="5dp"
+                            >
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/name"
+                                android:inputType="number"
+                                android:textSize="12sp"
+                                android:hint="Distance Covered(In KiloMeters)"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_height="match_parent" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginRight="3dp">
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:id="@+id/spinner1"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="50dp">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/yp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="MarketPlace"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="OnlineMart" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="130dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="ShopKart" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="130dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Shop@Home" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginEnd="33dp"
+                        android:id="@+id/ln"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="33dp">
+
+
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:id="@+id/spinner"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="30dp">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="33dp"
+                        android:id="@+id/empid"
+                       android:layout_alignParentStart="true"
+                        android:inputType="number"
+                        android:textColor="#000"
+                        android:hint="Enter the Employee ID"/>
+
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_toEndOf="@+id/empid"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Verify"
+                        android:id="@+id/veri"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:background="#c40000"/>
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+android:visibility="gone"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Verified"
+                            android:id="@+id/verid"
+                            android:layout_toEndOf="@+id/empid"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="#FFF"
+                            android:background="#008000"/>
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@+id/verid"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Clear"
+android:visibility="gone"
+                            android:id="@+id/edit"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="#FFF"
+                            android:background="#c40000"/>
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/empid"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="0dp"
+                            android:text="Not Verified"
+                            android:id="@+id/veridf"
+                            android:visibility="gone"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="#FFF"
+                            android:background="#008000"/>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/yu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_vertical"
+                        android:text="Resell Availability(Verification Required)"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBo"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Yes" />
+
+                    <CheckBox
+                        android:id="@+id/checkBo1"
+                        android:layout_width="130dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+
+                    <TextView
+                        android:id="@+id/res"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="40dp"
+                        android:visibility="gone"
+                        android:gravity="center_vertical"
+                        android:text="Set the maximum resell price"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/ress"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/resellprice"
+                            android:inputType="number"
+                            android:hint="Enter the Maximum Resell Price"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:textSize="12sp"
+                            android:layout_height="match_parent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="3dp">
+                    <TextView
+                        android:id="@+id/yup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Delivery Type"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+
+                    <RadioGroup
+                        android:id="@+id/radioSex"
+                        android:layout_below="@+id/yup"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Express Delivery"
+                            android:textSize="12sp"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Normal Delivery" />
+                        <RadioButton
+                            android:id="@+id/radioFe"
+                            android:layout_width="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Custom Delivery" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>-->
+
+                <TextView
+                    android:id="@+id/yut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Do you want to add product to MyShop"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBot"
+                    android:layout_width="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/checkBo1t"
+                    android:layout_width="130dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#5C25B7"
+                    android:gravity="center_vertical"
+                    android:text="Continue"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

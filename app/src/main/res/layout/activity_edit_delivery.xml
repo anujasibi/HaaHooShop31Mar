@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryPlans">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/re"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Edit Delivery Plans"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="#5c25b7"
+                    />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="28dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Set the default delivery price"
+                android:textAlignment="center"
+                android:layout_below="@+id/re"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ress"
+                android:layout_below="@+id/res"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/resellprice"
+                    android:inputType="number"
+                    android:hint="Enter the default delivery price"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="12sp"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Free Delivery(Based On distance)"
+                android:layout_below="@+id/ress"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/freet"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Free Delivery upto (In Kms) : "
+
+                android:gravity="center_vertical"
+                android:layout_below="@+id/free"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/freet"
+                android:layout_below="@+id/free"
+                android:textAlignment="center"
+                android:id="@+id/distance"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:hint="Distance"/>
+
+            <TextView
+                android:id="@+id/freett"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Minimum Order Value (In rupees) : "
+                android:gravity="center_vertical"
+                android:layout_below="@+id/freet"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/freett"
+                android:layout_below="@+id/freet"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:id="@+id/disamount"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"
+                android:hint="Amount"/>
+
+            <TextView
+                android:id="@+id/fre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Free Delivery(Based On Order)"
+                android:layout_below="@+id/freett"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/fret"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Minimum Order Value : "
+
+                android:gravity="center_vertical"
+                android:layout_below="@+id/fre"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/fret"
+                android:layout_below="@+id/fre"
+                android:textAlignment="center"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/orderamo"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:hint="Amount"/>
+
+
+            <TextView
+                android:id="@+id/outs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Outside the free delivery area(Based On distance)"
+                android:layout_below="@+id/fret"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/outss"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Delivery Price : "
+
+                android:gravity="center_vertical"
+                android:layout_below="@+id/outs"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/outss"
+                android:layout_below="@+id/outs"
+                android:textAlignment="center"
+                android:id="@+id/outamount"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:hint="Amount"/>
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#5C25B7"
+                android:gravity="center_vertical"
+                android:text="Submit"
+                android:layout_below="@+id/outss"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
