@@ -71,12 +71,26 @@ public class MyAdapter extends ArrayAdapter {
         final TextView addD = v.findViewById(R.id.add);
         TextView plus = v.findViewById(R.id.plus);
         TextView viewi=(TextView)v.findViewById(R.id.viewk);
+        TextView verify=v.findViewById(R.id.verify);
+        String ver=birdList.get(position).getVerify();
+
+        if(ver.equals("0")){
+            verify.setText("Verified");
+        }
+        if(ver.equals("1")){
+            verify.setText("Not Verified");
+            verify.setBackgroundResource(R.color.red);
+        }
+
+
 
         ImageView imageView = (ImageView) v.findViewById(R.id.imageView);
         ImageView delete = (ImageView) v.findViewById(R.id.delete);
         textView.setText(birdList.get(position).getName());
       //  Picasso.with(getContext()).load(birdList.get(position).getImage()).into(imageView);
         Picasso.get().load(birdList.get(position).getImage()).into(imageView);
+
+
 
         textView1.setText("₹ "+birdList.get(position).getDiscount());
         if(Integer.parseInt(birdList.get(position).getDiscount())==0){

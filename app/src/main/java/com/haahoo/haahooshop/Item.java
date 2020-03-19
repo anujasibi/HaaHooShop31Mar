@@ -13,6 +13,7 @@ public class Item {
     public String email;
     public String Categoryid;
     public String display;
+    public String verify;
 
     public String[] getImk() {
         return imk;
@@ -46,6 +47,14 @@ public class Item {
 
     public String getIma() {
         return ima;
+    }
+
+    public String getVerify() {
+        return verify;
+    }
+
+    public void setVerify(String verify) {
+        this.verify = verify;
     }
 
     public void setIma(String ima) {

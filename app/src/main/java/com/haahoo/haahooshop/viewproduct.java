@@ -205,6 +205,10 @@ public class viewproduct extends AppCompatActivity {
                                 String Memory=jsonArray.optString("Memory");
                                 Log.d("specifications","mm"+Memory);
 
+                                String verify=dataobj.optString("approve_status");
+                                playerModel.setVerify(verify);
+                                Log.d("specifications","mm"+verify);
+
                                 playerModel.setDisplay(display);
                                 playerModel.setMemory(Memory);
                              /*   JSONObject jsonObject=jsonArray.getJSONObject(0);
