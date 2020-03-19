@@ -121,6 +121,16 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioSex"
+                        android:hint="Enter the Delivery Amount"
+                        android:inputType="number"
+                        android:textSize="12sp"
+                        android:layout_margin="20dp"
+                        android:id="@+id/damount"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                        android:layout_below="@+id/radioSex"
                         android:hint="Enter the Expected Time(for eg: 4PM - 5PM)"
                         android:textSize="12sp"
@@ -176,6 +186,19 @@
                         </Spinner>
 
                     </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText1"
+                        android:hint="Enter the Delivery Amount"
+                        android:inputType="number"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:layout_margin="20dp"
+                        android:id="@+id/cdamount"/>
+
+
 
 
 

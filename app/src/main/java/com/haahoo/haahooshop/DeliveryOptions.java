@@ -40,7 +40,7 @@ public class DeliveryOptions extends AppCompatActivity  implements
     String amPm;
     DatePickerDialog picker;
     EditText eText;
-    EditText datt;
+    EditText datt,damount,cdamount;
     SessionManager sessionManager;
     TextView save;
     Activity activity=this;
@@ -79,6 +79,8 @@ public class DeliveryOptions extends AppCompatActivity  implements
         etChooseTime=findViewById(R.id.etChooseTime);
         ln=findViewById(R.id.ln);
         datt=findViewById(R.id.datt);
+        damount=findViewById(R.id.damount);
+        cdamount=findViewById(R.id.cdamount);
 
         save=findViewById(R.id.save);
 
@@ -137,10 +139,14 @@ public class DeliveryOptions extends AppCompatActivity  implements
                 datt.setVisibility(View.GONE);
                 ln.setVisibility(View.GONE);
                 etChooseTime.setVisibility(View.GONE);
+                cdamount.setVisibility(View.GONE);
+                damount.setVisibility(View.VISIBLE);
                 eText.setVisibility(View.GONE);
                 sessionManager.setdelvry_tym("");
                 sessionManager.setdelvry_date("");
                 sessionManager.setcancel_tym("");
+                sessionManager.setcusdam("");
+
             }
         });
 
@@ -149,11 +155,15 @@ public class DeliveryOptions extends AppCompatActivity  implements
             public void onClick(View v) {
                 datt.setVisibility(View.GONE);
                 ln.setVisibility(View.GONE);
+                damount.setVisibility(View.GONE);
                 etChooseTime.setVisibility(View.GONE);
                 eText.setVisibility(View.GONE);
+                cdamount.setVisibility(View.GONE);
+                sessionManager.setcusdam("");
                 sessionManager.setdelvry_tym("");
                 sessionManager.setdelvry_date("");
                 sessionManager.setcancel_tym("");
+                sessionManager.setexpdam("");
             }
         });
 
@@ -165,10 +175,15 @@ public class DeliveryOptions extends AppCompatActivity  implements
             public void onClick(View v) {
                 datt.setVisibility(View.VISIBLE);
                 ln.setVisibility(View.VISIBLE);
+                damount.setVisibility(View.GONE);
                 etChooseTime.setVisibility(View.GONE);
                 eText.setVisibility(View.GONE);
+                cdamount.setVisibility(View.GONE);
+                sessionManager.setcusdam("");
                 sessionManager.setdelvry_tym("");
                 sessionManager.setdelvry_date("");
+                sessionManager.setexpdam("");
+
 
 
             }
@@ -179,9 +194,12 @@ public class DeliveryOptions extends AppCompatActivity  implements
             public void onClick(View v) {
                 etChooseTime.setVisibility(View.VISIBLE);
                 eText.setVisibility(View.VISIBLE);
+                cdamount.setVisibility(View.VISIBLE);
                 datt.setVisibility(View.GONE);
+                damount.setVisibility(View.GONE);
                 ln.setVisibility(View.GONE);
                 sessionManager.setcancel_tym("");
+                sessionManager.setexpdam("");
             }
         });
 
@@ -197,12 +215,18 @@ public class DeliveryOptions extends AppCompatActivity  implements
                         one = (RadioButton) findViewById(selectedId);
                         sessionManager.setradio(one.getText().toString());
                         sessionManager.setpick_tym(datt.getText().toString());
+                sessionManager.setcusdam(cdamount.getText().toString());
+                sessionManager.setexpdam(damount.getText().toString());
+
+
                         startActivity(new Intent(DeliveryOptions.this, subscription.class));
                         Log.d("asdfghj","mmmmm"+sessionManager.getradio());
                         Log.d("asdfghj","mmmmm"+sessionManager.getdelvry_date());
                         Log.d("asdfghj","mmmmm"+sessionManager.getdelvry_tym());
                         Log.d("asdfghj","mmmmm"+sessionManager.getcancel_tym());
                         Log.d("asdfghj","mmmmm"+sessionManager.getpick_tym());
+                        Log.d("expressdeli","mmmmm"+sessionManager.getexpdam());
+                        Log.d("customdeli","mmmmm"+sessionManager.getcusdam());
 
 
             }

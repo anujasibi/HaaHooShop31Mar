@@ -451,6 +451,20 @@ public class SessionManager {
     public void setdistrict(String district){
         sharedPreferences.edit().putString("district",district).commit();
     }
+    public String getexpdam(){
+
+        return  sharedPreferences.getString("expdam","");
+    }
+    public void setexpdam(String expdam){
+        sharedPreferences.edit().putString("expdam",expdam).commit();
+    }
+    public String getcusdam(){
+
+        return  sharedPreferences.getString("cusdam","");
+    }
+    public void setcusdam(String cusdam){
+        sharedPreferences.edit().putString("cusdam",cusdam).commit();
+    }
 
     public String getaddres(){
 
