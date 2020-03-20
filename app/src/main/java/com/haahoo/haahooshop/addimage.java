@@ -574,12 +574,12 @@ public class addimage extends AppCompatActivity {
         Log.d("resell","mm"+sessionManager.getempid());
         RequestBody emp_branch  = RequestBody.create(MediaType.parse("text/plain"),sessionManager.getempbranch());
         Log.d("resell","mm"+sessionManager.getempid());
-        RequestBody express_delivery_price  = RequestBody.create(MediaType.parse("text/plain"),sessionManager.getexpdam());
+        RequestBody Express_delivery_price  = RequestBody.create(MediaType.parse("text/plain"),sessionManager.getexpdam());
         Log.d("resell","mm"+sessionManager.getexpdam());
-        RequestBody custome_delivery_price  = RequestBody.create(MediaType.parse("text/plain"),sessionManager.getcusdam());
+        RequestBody Custom_delivery_price  = RequestBody.create(MediaType.parse("text/plain"),sessionManager.getcusdam());
         Log.d("resell","mm"+sessionManager.getcusdam());
         //
-        Call call = uploadAPIs.uploadImage("Token "+sessionManager.getTokens(),part,pdt_name,pdt_cat_id,pdt_spec,pdt_price,pdt_return_period,pdt_discount,stock,pdt_description,delivery_mode,distance,type,resell,max_price,subscription,sub_mode,product_owner,myshop,incentive,del_charge,del_applicable,delvry_date,delvry_tym,cancel_tym,pick_tym,emp_id,emp_branch,express_delivery_price,custome_delivery_price);
+        Call call = uploadAPIs.uploadImage("Token "+sessionManager.getTokens(),part,pdt_name,pdt_cat_id,pdt_spec,pdt_price,pdt_return_period,pdt_discount,stock,pdt_description,delivery_mode,distance,type,resell,max_price,subscription,sub_mode,product_owner,myshop,incentive,del_charge,del_applicable,delvry_date,delvry_tym,cancel_tym,pick_tym,emp_id,emp_branch,Express_delivery_price,Custom_delivery_price);
         call.enqueue(new Callback() {
             @Override
             public void onResponse(Call call, Response response) {

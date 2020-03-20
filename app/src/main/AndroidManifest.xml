@@ -23,7 +23,8 @@
         android:roundIcon="@mipmap/rounded"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".RealtimeLocation"></activity>
+        <activity android:name=".codlistingdetaills"></activity>
+        <activity android:name=".RealtimeLocation" />
         <activity android:name=".codlisting" />
         <activity android:name=".DeliveryOptions" />
         <activity android:name=".viewbankaccounts" />

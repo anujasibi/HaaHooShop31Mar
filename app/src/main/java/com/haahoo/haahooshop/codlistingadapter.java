@@ -3,11 +3,15 @@ package com.haahoo.haahooshop;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 
@@ -61,6 +65,12 @@ public class codlistingadapter  extends RecyclerView.Adapter<codlistingadapter.M
         holder.amount.setText(dataModelArrayList.get(position).getAmount());
         holder.id.setText(dataModelArrayList.get(position).getOrderid());
         holder.type.setText(dataModelArrayList.get(position).getType());
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
 
 
     }
